@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+</head>
+<body bgcolor="cyan">
+    
+
+
+
+
+<script>
+precio = 1000
+tv = prompt("Televisiones por llevar")
+
+//Quitar 25%
+
+if(tv >= 5){
+
+total = (tv * precio) * 0.25
+sub =  (tv * precio) - total
+ //window.alert("Su precio total es: " + sub);
+
+/*document.write("Articulo Television" )
+document.write("<br>")
+document.write("Cantidad: " + tv)
+document.write("<br>")
+document.write("Descuento: " + sub)
+document.write("<br>")
+document.write("Total: " + total)
+*/
+
+var tabla = "<center><table border='2'>" + 
+    "<tr>  <td > Articulo</td>  <td> Cantidad</td>  <td>Descuento</td> <td> Total</td>    </tr>" +
+    " <tr> <td> Television</td> <td>" + tv + " </td> <td>" +sub + " </td> <td>" +total +  "</td> </tr>  </table> </center>";
+document.write(tabla);
+
+
+}else{
+    total = tv * precio 
+    //window.alert("Su precio total es: " + sub);
+
+    /*document.write("Articulo Television" )
+document.write("<br>")
+document.write("Cantidad: " + tv)
+document.write("<br>")
+document.write("Total: " + total)*/
+
+var tabla = "<center> <table border='2'>" + 
+    "<tr>  <td > Articulo</td>  <td> Cantidad</td>  <td>Descuento</td> <td> Total</td>    </tr>" +
+    " <tr> <td> Television</td> <td>" + tv + " </td> <td> No aplica </td> <td>" +total +  "</td> </tr>  </table></center> ";
+    document.write(tabla);
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
